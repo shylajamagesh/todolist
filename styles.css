@@ -1,0 +1,149 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Container Styles */
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+/* Title Styles */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+#task-input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#add-task-button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-task-button:hover {
+    background-color: #45a049;
+}
+
+/* Task List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-item span {
+    flex: 1;
+    font-size: 16px;
+    color: #555;
+}
+
+.task-item.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Button Styles */
+button {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+/* Status Button */
+.status-btn {
+    background-color: #ff9800;
+    color: white;
+}
+
+.status-btn:hover {
+    background-color: #fb8c00;
+}
+
+/* Edit Button */
+.edit-btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #1e88e5;
+}
+
+/* Delete Button */
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #e53935;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #add-task-button, #task-input {
+        padding: 10px;
+    }
+
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .task-item button {
+        margin-top: 5px;
+    }
+}
